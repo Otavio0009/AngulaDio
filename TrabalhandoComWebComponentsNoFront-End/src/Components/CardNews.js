@@ -34,6 +34,7 @@ class CardNews extends HTMLElement {
         cardRight.setAttribute("class", "card-right");
 
         const image = document.createElement("img");
+        image.setAttribute("class", "image");
         image.src = this.getAttribute("link-src") || "assets/Image/Ícone de Perfil Minimalista em Fundo Escuro.png";
         image.alt = this.getAttribute("alt") || "";
 
@@ -48,13 +49,6 @@ class CardNews extends HTMLElement {
     styles() {
         const style = document.createElement("style");
         style.textContent = `
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-                font-family: 'Segoe UI', sans-serif;
-            }
-
             .card {
                 width: 80%;
                 display: flex;
@@ -89,9 +83,10 @@ class CardNews extends HTMLElement {
                 color: gray;
             }
 
-            img {
-                min-width: 15rem;
-                min-height: 15rem;
+            .image {
+                width: 15rem;
+                height: 15rem;
+                object-fit: cover;
             }
         `;
 
