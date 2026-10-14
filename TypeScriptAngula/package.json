@@ -1,0 +1,25 @@
+{
+  "name": "anguladio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Otavio0009/AngulaDio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Otavio0009/AngulaDio/issues"
+  },
+  "homepage": "https://github.com/Otavio0009/AngulaDio#readme",
+  "devDependencies": {
+    "typescript": "^7.0.2"
+  }
+}
