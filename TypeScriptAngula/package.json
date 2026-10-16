@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npx tsc && node build/index.js",
+    "start:dev": "tsx watch src/index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/Otavio0009/AngulaDio#readme",
   "devDependencies": {
-    "typescript": "^7.0.2"
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3"
   }
 }
